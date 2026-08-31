@@ -1,0 +1,42 @@
+{
+  "version": "v1.0",
+  "created": "2026-08-31",
+  "dataset": "starter_dataset",
+  "rows": 30000,
+  "base_rate": 0.542,
+  "baseline": {
+    "precision_at_20": 0.9,
+    "precision_at_50": 0.68,
+    "pages_found": 17
+  },
+  "model": {
+    "type": "Logistic Regression",
+    "feature_set": "expanded (14 features)",
+    "split_type": "client_holdout",
+    "precision_at_20": 0.65,
+    "precision_at_50": 0.7
+  },
+  "action_playbook": {
+    "total_actionable_pages": 13024,
+    "action_breakdown": {
+      "Review - High Priority": 4676,
+      "Fix CTR": 4435,
+      "Monitor - Striking Distance": 3840,
+      "Expand Content": 72,
+      "Refresh Content": 1
+    },
+    "priority_1_count": 4676,
+    "priority_2_count": 1,
+    "priority_3_count": 4435,
+    "priority_4_count": 72,
+    "priority_5_count": 3840
+  },
+  "validation": {
+    "random_split_precision_at_20": 0.7,
+    "random_split_precision_at_50": 0.74,
+    "client_holdout_precision_at_20": 0.65,
+    "client_holdout_precision_at_50": 0.7,
+    "gap_at_precision_20": 0.05,
+    "gap_at_precision_50": 0.04
+  }
+}
